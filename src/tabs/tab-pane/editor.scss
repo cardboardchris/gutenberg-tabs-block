@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-custom-block-tab-pane {
+
+	&.tab-pane {
+		display: none;
+		overflow: hidden;
+	}
+
+	& > div {
+		flex-grow: 1;
+	}
+
+	.delete-tab-button {
+		flex-grow: 0;
+		margin-left: 20px;
+	}
+
+	&.is-selected {
+		border: 1px dotted #000000;
+	}
+
+	&.show {
+		display: flex;
+	}
+
+}

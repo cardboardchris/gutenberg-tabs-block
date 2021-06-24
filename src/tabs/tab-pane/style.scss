@@ -1,0 +1,17 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-custom-block-tab-pane {
+
+	margin: 0;
+	padding: 20px;
+
+	div:last-child,
+	p:last-child {
+		margin-bottom: 0;
+	}
+}

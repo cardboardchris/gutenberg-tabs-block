@@ -1,0 +1,67 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-custom-block-tabs {
+
+	.nav {
+		flex-wrap: nowrap;
+	}
+
+	.nav-tabs {
+
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		.nav-item {
+
+			.nav-link,
+			.nav-link > div > div {
+				margin: 0 5px;
+				background-color: #919191;
+				padding: 0;
+				border: 1px solid lightgray;
+				border-bottom: none;
+				border-radius: 5px 5px 0 0;
+			}
+
+			.rich-text {
+				color: #ffffff;
+				padding: 2px 10px;
+				margin: 5px 5px 0 5px;
+				border: 1px solid transparent;
+				border-radius: 3px 3px 0 0;
+			}
+
+			.nav-link.active {
+				background-color: #ffffff;
+
+				.rich-text {
+					color: #495057;
+
+					&:focus {
+						border: 1px solid gray;
+					}
+				}
+			}
+		}
+
+		.add-tab-button {
+			background-color: #919191;
+			color: #ffffff;
+			padding: 9px;
+			border-radius: 2.5px 2.5px 0 0;
+		}
+	}
+
+	.tab-content .block-list-appender {
+		display: none;
+	}
+
+	.is-selected {
+		border: 1px dotted #000000;
+	}
+}
